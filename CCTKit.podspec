@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "这是一个公共的开发组件,大家随时取用"
 
-  s.homepage     = "https://github.com/virtsun/GLKit"
+  s.homepage     = "https://github.com/virtsun/CCTKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -51,9 +51,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "sunlantao" => "sunlantao@9fbank.com.cn" }
+  s.author             = { "sunlantao" => "swiftletin@gmail.com" }
   # Or just: s.author    = "sunlantao"
-  # s.authors            = { "sunlantao" => "sunlantao@9fbank.com.cn" }
+  # s.authors            = { "sunlantao" => "swiftletin@gmail.com" }
   # s.social_media_url   = "http://twitter.com/sunlantao"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/virtsun/GLKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/virtsun/CCTKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,47 +87,30 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
   s.subspec 'Types' do |ss|
-      ss.source_files = 'GLKit/Types/**/*.{h,m}'
+      ss.source_files = 'CCTKit/Types/**/*.{h,m}'
   end
 
-  s.subspec 'Components' do |ss|
-      ss.source_files = 'GLKit/Components/**/*.{h,m}'
+  s.subspec 'Foundation' do |ss|
+      ss.source_files = 'CCTKit/Foundation/**/*.{h,m}'
   end
 
-  s.subspec 'Catagory' do |ss|
-      ss.source_files = 'GLKit/Catagory/**/*.{h,m}'
-      ss.dependency 'GLKit/Types'
+   s.subspec 'Category' do |ss|
+      ss.source_files = 'CCTKit/Category/**/*.{h,m}'
+      ss.dependency 'CCTKit/Types'
   end
 
-  s.subspec 'FlowView' do |ss|
-      ss.source_files = 'GLKit/FlowView/**/*.{h,m}'
+  s.subspec 'Controls' do |ss|
+      ss.source_files = 'CCTKit/Controls/**/*.{h,m}'
+      ss.dependency 'CCTKit/Types'
   end
 
-   s.subspec 'Cache' do |ss|
-      ss.source_files = 'GLKit/Cache/**/*.{h,m}'
-      ss.dependency 'GLKit/Types'
-  end
+ 
 
-  s.subspec 'URLProtocol' do |ss|
-      ss.source_files = 'GLKit/URLProtocol/**/*.{h,m}'
-      ss.dependency 'GLKit/Cache'
-  end
+  s.source_files  = "CCTKit", "CCTKit/*.{h,m}"
+  s.exclude_files = "CCTKit/Exclude"
 
-  s.subspec 'PopView' do |ss|
-      ss.source_files = 'GLKit/PopView/**/*.{h,m}'
-      ss.dependency 'GLKit/Catagory'
-  end
-
-  s.subspec 'GCDTimer' do |ss|
-      ss.source_files = 'GLKit/GCDTimer/**/*.{h,m}'
-  end
-
-  s.source_files  = "GLKit", "GLKit/*.{h,m}"
-  s.exclude_files = "GLKit/Exclude"
-
-  s.public_header_files = "GLKit/*.h"
+  s.public_header_files = "CCTKit/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
