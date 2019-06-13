@@ -46,6 +46,8 @@
 		F162DCCA2293DE4700869D92 /* UIImage+ColorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F162DCC22293DE4700869D92 /* UIImage+ColorImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F162DCCE2293DED500869D92 /* CCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = F162DCCC2293DED500869D92 /* CCGradientView.m */; };
 		F162DCCF2293DED500869D92 /* CCGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = F162DCCD2293DED500869D92 /* CCGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19B5E0F22B1FBC500B37C6E /* UIFakeSizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B5E0D22B1FBC500B37C6E /* UIFakeSizeImage.m */; };
+		F19B5E1022B1FBC500B37C6E /* UIFakeSizeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F19B5E0E22B1FBC500B37C6E /* UIFakeSizeImage.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		F162DCC22293DE4700869D92 /* UIImage+ColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorImage.h"; sourceTree = "<group>"; };
 		F162DCCC2293DED500869D92 /* CCGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGradientView.m; sourceTree = "<group>"; };
 		F162DCCD2293DED500869D92 /* CCGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGradientView.h; sourceTree = "<group>"; };
+		F19B5E0D22B1FBC500B37C6E /* UIFakeSizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFakeSizeImage.m; sourceTree = "<group>"; };
+		F19B5E0E22B1FBC500B37C6E /* UIFakeSizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFakeSizeImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +261,8 @@
 		F162DCBA2293DE2100869D92 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				F19B5E0E22B1FBC500B37C6E /* UIFakeSizeImage.h */,
+				F19B5E0D22B1FBC500B37C6E /* UIFakeSizeImage.m */,
 				F162DCBC2293DE4700869D92 /* UIImage+Clip.h */,
 				F162DCC02293DE4700869D92 /* UIImage+Clip.m */,
 				F162DCC22293DE4700869D92 /* UIImage+ColorImage.h */,
@@ -285,6 +291,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19B5E1022B1FBC500B37C6E /* UIFakeSizeImage.h in Headers */,
 				F162DC2B228A5CF300869D92 /* Serialize.h in Headers */,
 				F162DC29228A5CEA00869D92 /* Singleton.h in Headers */,
 				F162DC2E228A5D5300869D92 /* canvas.h in Headers */,
@@ -383,6 +390,7 @@
 				F162DC87228A8C4700869D92 /* CKPopView.m in Sources */,
 				F162DC77228A8BEA00869D92 /* NSURLProtocol+WKWebview.m in Sources */,
 				F162DC6A228A8A7000869D92 /* UIApplication+Present.m in Sources */,
+				F19B5E0F22B1FBC500B37C6E /* UIFakeSizeImage.m in Sources */,
 				F162DCC72293DE4700869D92 /* UIImage+ColorImage.m in Sources */,
 				F162DCC32293DE4700869D92 /* UIImage+ImageEffects.m in Sources */,
 				F162DC6B228A8A7000869D92 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
